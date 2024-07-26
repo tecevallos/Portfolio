@@ -1,0 +1,19 @@
+.typing-effect {
+    border-right: .1em solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 600px;
+}
+
+.show-more {
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.show-more:hover {
+    transform: translateY(-2px);
+}

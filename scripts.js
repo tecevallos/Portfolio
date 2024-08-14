@@ -33,7 +33,7 @@ window.addEventListener('click', function(event) {
 });
 
 // Typing effect for job titles
-const titles = ["Software Engineer", "Video Editor", "Content Creator"];
+const titles = ["Python", "HTML", "C", "JavaScript", "SQL", "Java", "Linux"];
 let currentTitle = 0;
 let charIndex = 0;
 const typingSpeed = 150;

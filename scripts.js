@@ -32,39 +32,7 @@ window.addEventListener('click', function(event) {
     });
 });
 
-// Typing effect for job titles
-const titles = ["Python", "HTML", "C", "JavaScript", "SQL", "Java", "Linux"];
-let currentTitle = 0;
-let charIndex = 0;
-const typingSpeed = 150;
-const erasingSpeed = 100;
-const newTitleDelay = 2000;
-const titleElement = document.querySelector('.typing-effect');
 
-function type() {
-    if (charIndex < titles[currentTitle].length) {
-        titleElement.textContent += titles[currentTitle].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, typingSpeed);
-    } else {
-        setTimeout(erase, newTitleDelay);
-    }
-}
-
-function erase() {
-    if (charIndex > 0) {
-        titleElement.textContent = titles[currentTitle].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, erasingSpeed);
-    } else {
-        currentTitle = (currentTitle + 1) % titles.length;
-        setTimeout(type, typingSpeed);
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(type, newTitleDelay);
-});
 
 // Show More functionality
 document.querySelectorAll('.show-more').forEach(button => {
